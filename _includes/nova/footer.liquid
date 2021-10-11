@@ -1,11 +1,11 @@
 {%- assign first_post = site.posts | last -%}
 {%- assign last_post = site.posts | first -%}
 
-<p style="font-weight: bold;">© {{ first_post.date | date: "%Y" }}–{{ last_post.date | date: "%Y" }} <a href="/about/">Иван Шихалев</a></p>
+<p style="font-weight: bold;">© {{ first_post.date | date: "%Y" }}–{{ last_post.date | date: "%Y" }} <a href="/about/">{{- site.author -}}</a></p>
 
-<p>Материалы сайта опубликованы под лицензией <a style="font-weight: bold;" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>,
+<p>Материалы сайта опубликованы под лицензией <a style="font-weight: bold;" href="{{- site.license.content.url -}}">{{- site.license.content.name -}}</a>,
   если не оговорено иное.
-  <a href="https://github.com/shikhalev/shikhalev.github.io">Программный код</a> непосредственно сайта —
+  <a href="https://github.com/shikhalev/jekyll-theme">Программный код</a> непосредственно сайта —
   под лицензией <a style="font-weight: bold;" href="https://opensource.org/licenses/MIT">MIT</a>.</p>
 
 <p>Сайт сформирован статическим генератором <a style="font-weight: bold;" href="https://jekyllrb.com/">Jekyll</a>,

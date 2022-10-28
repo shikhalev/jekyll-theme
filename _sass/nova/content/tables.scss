@@ -15,7 +15,9 @@ article table {
   th, tfoot td {
     background-color: $light-gray-color;
     border: 1px solid $base-gray-color;
-  }
+    font-family: $caption-font-family;
+    font-weight: normal;
+    }
 
   tr:nth-child(even) {
     background-color: $lightest-gray-color;

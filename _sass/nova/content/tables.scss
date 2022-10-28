@@ -12,7 +12,7 @@ article table {
     border: 1px solid $light-gray-color;
   }
 
-  th {
+  th, tfoot td {
     background-color: $light-gray-color;
     border: 1px solid $base-gray-color;
   }

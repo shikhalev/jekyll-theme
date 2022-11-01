@@ -197,3 +197,8 @@ p img {
 .cold-marker {
   background-color: lighten($cold-highlight-color, 25);
 }
+
+abbr {
+  border-bottom: 1px dotted $highlight-color;
+  cursor: help;
+}

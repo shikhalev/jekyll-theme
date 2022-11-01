@@ -193,3 +193,7 @@ p img {
 .marker {
   background-color: lighten($highlight-color, 25);
 }
+
+.cold-marker {
+  background-color: lighten($cold-highlight-color, 25);
+}

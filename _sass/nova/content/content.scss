@@ -189,3 +189,7 @@ p img {
     color: $frame-color-dark;
   }
 }
+
+.marker {
+  background-color: lighten($highlight-color, 20);
+}

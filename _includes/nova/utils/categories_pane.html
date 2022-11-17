@@ -1,4 +1,8 @@
 <aside class="categories">
   <a class="fa-icon-home" href="/" title="Главная страница сайта"></a>
-  {%- include nova/utils/categories.liquid item=page -%}
+  {%- if layout.navigation == 'plain' -%}
+    {%- include nova/utils/breadcrumbs.liquid -%}
+  {%- else -%}
+    {%- include nova/utils/categories.liquid item=page -%}
+  {%- endif -%}
 </aside>

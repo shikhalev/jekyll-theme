@@ -128,12 +128,14 @@
 </aside>
 {%- endif -%}
 
+{% comment %}
 <!-- скрываем через style, чтоб не менять макет полностью -->
 <aside id="ga" style="visibility:hidden;height:0px;width:0px;margin:0px;padding:0px;">
   {%- comment -%}
   {%- include google/ads.html -%}
   {%- endcomment -%}
 </aside>
+{% endcomment %}
 
 {%- if site.show_feeds != false -%}
 <aside id="feeds">

@@ -126,6 +126,8 @@
 <aside id="donate">
   {%- include yoomoney/form.html -%}
 </aside>
+{%- else -%}
+<aside id="donate" style="visibility:hidden;height:0px;width:0px;margin:0px;padding:0px;"></aside>
 {%- endif -%}
 
 <!-- скрываем через style, чтоб не менять макет полностью -->
@@ -139,12 +141,16 @@
 <aside id="feeds">
   {%- include nova/aside/feeds.liquid -%}
 </aside>
+{%- else -%}
+<aside id="feeds" style="visibility:hidden;height:0px;width:0px;margin:0px;padding:0px;"></aside>
 {%- endif -%}
 
 {%- if site.show_contacts != false -%}
 <aside id="contacts">
   {%- include nova/aside/contacts.html -%}
 </aside>
+{%- else -%}
+<aside id="contacts" style="visibility:hidden;height:0px;width:0px;margin:0px;padding:0px;"></aside>
 {%- endif -%}
 
 {%- if page.hide_last_comments -%}

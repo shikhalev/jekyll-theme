@@ -17,24 +17,16 @@
   {%- assign copy_date = start_date | append: "–" | append: end_date -%}
 {%- endif -%}
 
-<p style="font-weight: bold;">© {{ copy_date }}
-  <a href="/about/">{{- site.author -}}</a>
-</p>
+<p style="font-weight: bold;">© {{ copy_date }} <a href="/about/">{{- site.author -}}</a></p>
 
 <p>Материалы сайта опубликованы под лицензией
-  <a style="font-weight: bold;" href="{{- site.license.content.url -}}">{{- site.license.content.name -}}</a>,
-  если не оговорено иное.
-  <a href="https://github.com/shikhalev/jekyll-theme">Программный код</a>
-  непосредственно сайта —
-  под лицензией
-  <a style="font-weight: bold;" href="https://opensource.org/licenses/MIT">MIT</a>.</p>
+<a style="font-weight: bold;" href="{{- site.license.content.url -}}">{{- site.license.content.name -}}</a>,
+если не оговорено иное. <a href="https://github.com/shikhalev/jekyll-theme">Программный код</a> непосредственно сайта — под лицензией
+<a style="font-weight: bold;" href="https://opensource.org/licenses/MIT">MIT</a>.</p>
 
-<p>Сайт сформирован статическим генератором
-  <a style="font-weight: bold;" href="https://jekyllrb.com/">Jekyll</a>
-  {%- if site.staticman_url -%}
-    , комментарии —
-    <a style="font-weight: bold;" href="https://staticman.net/">Staticman</a>
-  {%- endif -%}
-  . Отдельная благодарность
-  автору
-  <a style="font-weight: bold;" href="https://github.com/allejo/jekyll-toc">allejo/jekyll-toc</a>.</p>
+<p>Сайт сформирован статическим генератором <a style="font-weight: bold;" href="https://jekyllrb.com/">Jekyll</a>
+{%- if site.staticman_url -%}
+, комментарии —
+<a style="font-weight: bold;" href="https://staticman.net/">Staticman</a>
+{%- endif -%}
+. Отдельная благодарность автору <a style="font-weight: bold;" href="https://github.com/allejo/jekyll-toc">allejo/jekyll-toc</a>.</p>

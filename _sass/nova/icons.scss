@@ -199,6 +199,10 @@ $icons: (
     "symbol": "\f1e0",
     "font": "fas",
   ),
+  "language": (
+    "symbol": "\f1ab",
+    "font": "fas",
+  ),
 );
 
 @each $name, $data in $icons {

@@ -6,6 +6,6 @@
 {%- if include.url -%}
   {%- assign pg = site.pages | where: 'url', include.url | first -%}
   {%- if pg -%}
-    ​<a class="fa-icon-{{- pg.icon | default: 'file-alt' -}}" href="{{- pg.url | relative_url -}}" title="{{ pg.description | default: pg.title }}">{{- pg.short | default: pg.title -}}</a>
+    ​<a class="fa-icon-{{- pg.icon | default: 'folder-open-black' -}}" href="{{- pg.url | relative_url -}}" title="{{ pg.description | default: pg.title }}">{{- pg.short | default: pg.title -}}</a>
   {%- endif -%}
 {%- endif -%}

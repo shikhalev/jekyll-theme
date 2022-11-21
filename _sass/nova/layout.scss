@@ -372,7 +372,7 @@ aside {
     }
   }
 
-  &.toc-post {
+  &.toc-post, &.toc-page {
     ul {
       li::marker {
         @extend .fa-li-include-bookmark;

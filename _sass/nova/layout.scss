@@ -398,6 +398,11 @@ aside {
   }
 }
 
+#backs {
+  grid-area: backs;
+  padding: 10px;
+}
+
 #donate {
   grid-area: donate;
   place-self: center;

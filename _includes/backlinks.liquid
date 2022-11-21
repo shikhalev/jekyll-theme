@@ -23,7 +23,7 @@
     {%- assign empty_backs = false -%}
     <aside class="backlinks" id="backs">
     {%- if include.header_level -%}
-      <h{{- include.header_level -}}>{{- include.header_title | default: 'Обратные ссылки' -}}</h{{- include.header_level -}}>
+      <h{{- include.header_level -}}>{{- include.header_title | default: 'Ссылки сюда' -}}</h{{- include.header_level -}}>
     {%- endif -%}
     <ul>
     {%- for pp in list -%}

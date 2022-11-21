@@ -28,11 +28,11 @@
     <ul>
     {%- for pp in list -%}
       {%- if pp.date -%}
-        {%- assign icon = 'file-alt' -%}
+        {%- assign icon = 'post' -%}
       {%- else -%}
-        {%- assign icon = 'file' -%}
+        {%- assign icon = 'page' -%}
       {%- endif -%}
-      <li class="fa-icon-li-{{- icon -}}"><a href="{{- pp.url | relative_url -}}" title="{{- pp.description | default: pp.title -}}">{{- pp.title | default: pp.path -}}</a></li>
+      <li class="back-{{- icon -}}"><a href="{{- pp.url | relative_url -}}" title="{{- pp.description | default: pp.title -}}">{{- pp.title | default: pp.path -}}</a></li>
     {%- endfor -%}
     </ul>
     </aside>

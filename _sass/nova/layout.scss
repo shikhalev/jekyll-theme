@@ -405,8 +405,11 @@ aside {
     font-family: $compact-font-family;
     padding-left: 20px;
 
-    li::marker {
-      @extend .fa-li-include-hashtag;
+    li.back-page::marker {
+      @extend .fa-li-include-file;
+    }
+    li.back-post::marker {
+      @extend .fa-li-include-file-alt;
     }
   }
 

@@ -98,7 +98,7 @@
 {%- endif -%}
 
 {%- if page.toc -%}
-  {% assign allow_toc = true %}
+  {%- assign allow_toc = true -%}
 {%- elsif page.toc == false -%}
   {%- assign allow_toc = false -%}
 {%- else -%}
@@ -124,6 +124,8 @@
 {%- else -%}
 <aside id="toc" style="visibility:hidden;height:0px;width:0px;margin:0px;padding:0px;"></aside>
 {%- endif -%}
+
+{%- include backlinks.liquid header_level=4 -%}
 
 {%- if site.show_donate != false -%}
 <aside id="donate">

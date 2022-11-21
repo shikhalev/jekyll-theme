@@ -19,6 +19,7 @@ body {
       "hl header navy   navy   navy     hr"
       ".  main   main   .      search   ."
       ".  main   main   .      toc      ."
+      ".  main   main   .      backs    ."
       ".  main   main   .      donate   ."
       ".  main   main   .      gads     ."
       ".  main   main   .      feeds    ."
@@ -34,6 +35,7 @@ body {
       "hl header navy   navy   navy"
       ".  main   main   .      search"
       ".  main   main   .      toc"
+      ".  main   main   .      backs"
       ".  main   main   .      donate"
       ".  main   main   .      gads"
       ".  main   main   .      feeds"
@@ -50,6 +52,7 @@ body {
       "hl header hb     search   hr"
       ".  gads   gads   gads     ."
       ".  main   main   main     ."
+      ".  backs  backs  backs    ."
       ".  donate feeds  contacts ."
       ".  extra  extra  extra    ."
       "fl footer footer footer   fr";
@@ -62,6 +65,7 @@ body {
       "header hb     search"
       "gads   gads   gads"
       "main   main   main"
+      "backs  backs  backs"
       "donate feeds  contacts"
       "extra  extra  extra"
       "footer footer footer";
@@ -74,6 +78,7 @@ body {
       "search search search"
       "gads   gads   gads"
       "main   main   main"
+      "backs  backs  backs"
       "donate .      feeds"
       "donate .      contacts"
       "extra  extra  extra"
@@ -87,6 +92,7 @@ body {
       "search   search"
       "gads     gads"
       "main     main"
+      "backs    backs"
       "donate   donate"
       "feeds    feeds"
       "contacts contacts"
@@ -481,7 +487,8 @@ aside {
 }
 
 #feeds,
-#contacts {
+#contacts,
+#backs {
   @media screen and (max-width: 1149px) and (min-width: 750px) {
     margin-left: 10px;
   }
@@ -579,14 +586,16 @@ aside {
 #ga,
 #feeds,
 #contacts,
-#sidebar {
+#sidebar,
+#backs {
   margin-bottom: 10px;
 }
 
 #toc,
 #feeds,
 #contacts,
-#sidebar {
+#sidebar,
+#backs {
   border: solid $frame-color-light 1px;
   box-shadow: $base-shadow $frame-color-light;
 
@@ -611,7 +620,8 @@ aside {
   #donate,
   #feeds,
   #contacts,
-  #sidebar {
+  #sidebar,
+  #backs {
     display: none;
   }
 }

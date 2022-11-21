@@ -1,13 +1,12 @@
 # jekyll-theme
-Jekyll theme for Shikhalev.org
+
+Тема **[Jekyll][jekyll]** для сайта **[shikhalev.org][org]** и его поддоменов.
 
 ## TODO
 
-- [ ] Убрать из темы все сайтоспецифичное.
-- [ ] `_include/nova/aside/contacts.html`.
-- [x] Навигация, основанная на каталогах, для *простых страниц*.
-- [x] Засунуть обратные ссылки в боковую панель
-- [ ] Сделать декларативное подключение для **[giscus][giscus]**
-- [ ] Подумать над размещением оглавления на узких экранах.
+См. **[Issues][issues]**
 
 [giscus]: https://github.com/giscus/giscus
+[jekyll]: https://jekyllrb.com/
+[org]: https://shikhalev.org/
+[issues]: https://github.com/shikhalev/jekyll-theme/issues

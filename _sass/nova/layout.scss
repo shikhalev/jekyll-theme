@@ -419,6 +419,7 @@ aside {
   grid-area: donate;
   place-self: center;
   margin-bottom: -8px;
+  height: 243px;
 
   &:target {
     border-color: $highlight-color;

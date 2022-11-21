@@ -401,6 +401,15 @@ aside {
 #backs {
   grid-area: backs;
   padding: 10px;
+  ul {
+    font-family: $compact-font-family;
+    padding-left: 20px;
+
+    li::marker {
+      @extend .fa-li-include-hashtag;
+    }
+  }
+
 }
 
 #donate {

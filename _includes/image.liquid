@@ -36,12 +36,15 @@
 {%- else -%}
   {%- assign img_style = '' -%}
 {%- endif -%}
+{%- comment -%}
+TODO: доделать
 {%- if place == 'right' or place == 'left' -%}
   {%- assign shape_style = 'shape-outside: url(' | append: src | append: '); shape-margin: 10px;' -%}
 {%- else -%}
   {%- assign shape_style = '' -%}
 {%- endif -%}
-<figure markdown="0" id="{{- id -}}" class="{{- class -}}" style="max-width: {{- width -}}px; {{- shape_style -}} {{- include.style -}}">
+{%- endcomment -%}
+<figure markdown="0" id="{{- id -}}" class="{{- class -}}" style="max-width: {{- width -}}px; {{- include.style -}}">
   {%- if link -%}
     <a href="{{- link -}}" title="{{- title -}}">
   {%- endif -%}

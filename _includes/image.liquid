@@ -36,6 +36,11 @@
 {%- else -%}
   {%- assign img_style = '' -%}
 {%- endif -%}
+{%- if place == 'right' and place == 'left' -%}
+  {%- assign shape_style = 'shape-outside: url({{- src -}}); ' -%}
+{%- else -%}
+  {%- assign shape_style = '' -%}
+{%- endif -%}
 <figure markdown="0" id="{{- id -}}" class="{{- class -}}" style="max-width: {{- width -}}px;{{- include.style -}}">
   {%- if link -%}
     <a href="{{- link -}}" title="{{- title -}}">

@@ -36,6 +36,7 @@
 {%- else -%}
   {%- assign img_style = '' -%}
 {%- endif -%}
+{%- assign shape_style = '' -%}
 {%- if include.shape -%}
   {%- if include.shape == true -%}
     {%- assign shape_src = src -%}
@@ -44,8 +45,6 @@
   {%- endif -%}
   {%- if place == 'right' or place == 'left' -%}
     {%- assign shape_style = 'shape-outside: url(' | append: shape_src | append: '); shape-margin: 10px;' -%}
-  {%- else -%}
-    {%- assign shape_style = '' -%}
   {%- endif -%}
 {%- endif -%}
 <figure markdown="0" id="{{- id -}}" class="{{- class -}}" style="max-width: {{- width -}}px; {{- shape_style -}} {{- include.style -}}">

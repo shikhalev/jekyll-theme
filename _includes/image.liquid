@@ -36,7 +36,7 @@
 {%- else -%}
   {%- assign img_style = '' -%}
 {%- endif -%}
-{%- if place == 'right' and place == 'left' -%}
+{%- if place == 'right' or place == 'left' -%}
   {%- assign shape_style = 'shape-outside: url({{- src -}}); ' -%}
 {%- else -%}
   {%- assign shape_style = '' -%}

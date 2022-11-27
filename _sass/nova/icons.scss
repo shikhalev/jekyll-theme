@@ -211,6 +211,14 @@ $icons: (
     "symbol": "\f0c5",
     "font": "fas",
   ),
+  "square" : (
+    "symbol": "\f0c8",
+    "font": "far",
+  ),
+  "check-square": (
+    "symbol": "\f14a",
+    "font": "far",
+  ),
 );
 
 @each $name, $data in $icons {

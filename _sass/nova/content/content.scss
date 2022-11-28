@@ -16,7 +16,8 @@ article {
   }
 
   p,
-  dt {
+  dt,
+  li {
     a:link {
       color: $base-link-color;
       text-decoration: none;

@@ -22,7 +22,7 @@
 {%- endif -%}
 
 {%- if source.size > 0 -%}
-  <h2 id="last_entries">Последние записи</h2>
+  <h2 id="last_entries">{{ page.list_title | default: "Последние записи" }}</h2>
   {%- for item in source limit: limit -%}
     <section class="stream-item stream-item-{{ item.layout | split: '/' | last }}">
       {% include nova/utils/share_buttons.liquid item=item %}

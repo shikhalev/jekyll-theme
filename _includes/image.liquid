@@ -20,9 +20,9 @@
 {%- assign id = include.id | default: slug -%}
 {%- assign class_prefix = '' -%}
 {%- if place == 'center' -%}
-  {%- assign width = include.width | 800 -%}
+  {%- assign width = include.width | default: 800 -%}
 {%- else -%}
-  {%- assign width = include.width | 320 -%}
+  {%- assign width = include.width | default: 320 -%}
   {%- if width <= 200 -%}
     {%- assign class_prefix = 'strict-' -%}
   {%- endif -%}

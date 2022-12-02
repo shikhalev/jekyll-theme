@@ -17,6 +17,11 @@
     document.body.scrollTop = 0; // safari
     document.documentElement.scrollTop = 0;
     window.location.hash = '';
+    console.log({
+      href: window.location.href,
+      origin: window.location.origin,
+      string: window.location.toString()
+    })
   }
 
   function init() {

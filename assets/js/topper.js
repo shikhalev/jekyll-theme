@@ -18,11 +18,6 @@
     document.documentElement.scrollTop = 0;
     window.location.hash = '';
     history.pushState({}, document.title, window.location.href.split('#')[0]);
-    console.log({
-      href: window.location.href,
-      origin: window.location.origin,
-      string: window.location.toString()
-    })
   }
 
   function init() {

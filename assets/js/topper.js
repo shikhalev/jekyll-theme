@@ -16,6 +16,7 @@
   function onClick() {
     document.body.scrollTop = 0; // safari
     document.documentElement.scrollTop = 0;
+    window.location.hash = null;
   }
 
   function init() {

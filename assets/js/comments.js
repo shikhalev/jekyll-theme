@@ -33,7 +33,7 @@
 
   function check() {
     if (window.location.hash == "#comments") {
-      fetch(PATH)
+      fetch(PATH + "?ts=" + Date.now())
         .then((response) => response.json())
         .then((data) =>
           process(

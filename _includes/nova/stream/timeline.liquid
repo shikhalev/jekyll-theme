@@ -27,7 +27,10 @@
     <section class="stream-item stream-item-{{ item.layout | split: '/' | last }}">
       {% include nova/utils/share_buttons.liquid item=item %}
 
-      <p class="meta">{% include nova/utils/categories.liquid item=item %}</p>
+      {% assign check_streams = site.streams | first %}
+      {% if check_streams %}{% comment %} TODO: обязательно при рефакторинге не оставить этот ad-hoc {% endcomment %}
+        <p class="meta">{% include nova/utils/categories.liquid item=item %}</p>
+      {% endif %}
       <p class="meta">{{ item.date | date: site.date_format }} • {{ item.author | default: site.author }}</p>
 
       {%- if jekyll.environment == 'development' and item.recommend -%}

@@ -294,6 +294,7 @@ $img-icons: (
   "gpsbabel": url(/assets/img/ico/gpsbabel.png),
   "phil-harvey": url(/assets/img/ico/phil-harvey.svg),
   "hugin-ru": url(/assets/img/ico/hugin-ru.svg),
+  "giscus": url(/assets/img/ico/giscus.svg),
 );
 
 @each $name, $url in $img-icons {

@@ -3,13 +3,13 @@
 {%- if next_url != '/' -%}
   {%- include nova/utils/breadcrumbs.liquid url = next_url collection = include.collection -%}
 {%- endif -%}
-<pre>{{- include.collection | inspect -}}
-{{- include.url | inspect -}}
-{{- page.url | inspect -}}
-{{- next_url | inspect -}}</pre>
+<pre>include.collection = {{ include.collection | inspect }}
+include.url = {{ include.url | inspect }}
+page.url = {{ page.url | inspect }}
+next_url = {{ next_url | inspect }}</pre>
 {%- if include.url -%}
   {%- if include.collection -%}
-    <pre>{{ site.collections[include.collection] | pretty_inspect }}</pre>
+    <pre>site.collections[include.collection] = {{ site.collections[include.collection] | inspect }}</pre>
     {%- assign pg = site.collections[include.collection] | where: 'url', include.url | first -%}
   {%- else -%}
     {%- assign pg = site.pages | where: 'url', include.url | first -%}

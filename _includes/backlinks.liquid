@@ -12,6 +12,17 @@
       {%- assign list = list | push: ps -%}
     {%- endif -%}
   {%- endfor -%}
+  {%- for col in site.collections -%}
+    {%- if col.label and col.label != 'posts' and col.label != '_posts' -%}
+      {%- for im in col.docs -%}
+        {%- unless im.service or im.url == nil -%}
+          {%- if im.content contains substr or im.content contains substr2 or im.content contains substr3 -%}
+            {%- assign list = list | push: im -%}
+          {%- endif -%}
+        {%- endunless -%}
+      {%- endfor -%}
+    {%- endif -%}
+  {%- endfor -%}
   {%- for pg in site.pages | sort: 'path' -%}
     {%- unless pg.service -%}
       {%- if pg.content contains substr or pg.content contains substr2 or pg.content contains substr3 -%}

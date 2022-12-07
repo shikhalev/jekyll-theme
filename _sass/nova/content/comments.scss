@@ -248,3 +248,9 @@ $indents: 1, 2, 4, 8, 12;
     margin-left: #{$i}em;
   }
 }
+
+.giscus {
+  @media print {
+    display: none;
+  }
+}

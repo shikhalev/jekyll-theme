@@ -10,7 +10,7 @@ next_url = {{ next_url | inspect }}</pre>
 {%- if include.url -%}
   {%- if include.collection -%}
     {%- assign col = site.collections | where: 'label', include.collection | first -%}
-    {%- assign pg = col | where: 'url', include.url | first -%}
+    {%- assign pg = col.docs | where: 'url', include.url | first -%}
   {%- else -%}
     {%- assign pg = site.pages | where: 'url', include.url | first -%}
   {%- endif -%}

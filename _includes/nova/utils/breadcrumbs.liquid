@@ -9,6 +9,7 @@
 {{- next_url | inspect -}}</pre>
 {%- if include.url -%}
   {%- if include.collection -%}
+    <pre>{{ site.collections[include.collection] | pretty_inspect }}</pre>
     {%- assign pg = site.collections[include.collection] | where: 'url', include.url | first -%}
   {%- else -%}
     {%- assign pg = site.pages | where: 'url', include.url | first -%}

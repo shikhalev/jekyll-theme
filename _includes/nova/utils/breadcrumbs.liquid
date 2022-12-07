@@ -3,10 +3,6 @@
 {%- if next_url != '/' -%}
   {%- include nova/utils/breadcrumbs.liquid url = next_url collection = include.collection -%}
 {%- endif -%}
-<pre>include.collection = {{ include.collection | inspect }}
-include.url = {{ include.url | inspect }}
-page.url = {{ page.url | inspect }}
-next_url = {{ next_url | inspect }}</pre>
 {%- if include.url -%}
   {%- if include.collection -%}
     {%- assign col = site.collections | where: 'label', include.collection | first -%}

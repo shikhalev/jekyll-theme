@@ -4,6 +4,7 @@
   {%- include nova/utils/breadcrumbs.liquid url = next_url collection = include.collection -%}
 {%- endif -%}
 <pre>{{- include.collection | inspect -}}
+{{- include.url | inspect -}}
 {{- page.url | inspect -}}
 {{- next_url | inspect -}}</pre>
 {%- if include.url -%}

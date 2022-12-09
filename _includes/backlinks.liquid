@@ -38,12 +38,15 @@
     {%- endif -%}
     <ul>
     {%- for pp in list -%}
+      {%- comment -%}
       {%- if pp.date -%}
         {%- assign icon = 'post' -%}
       {%- else -%}
         {%- assign icon = 'page' -%}
       {%- endif -%}
-      <li class="back-{{- icon -}}"><a href="{{- pp.url | relative_url -}}" title="{{- pp.description | default: pp.title -}}">{{- pp.title | default: pp.path -}}</a></li>
+      {%- endcomment -%}
+      {%- assign icon = pp.icon | default: 'file' -%}
+      <li class="fa-icon-li-{{- icon -}}"><a href="{{- pp.url | relative_url -}}" title="{{- pp.description | default: pp.title -}}">{{- pp.title | default: pp.path -}}</a></li>
     {%- endfor -%}
     </ul>
     </aside>

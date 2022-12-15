@@ -1,0 +1,9 @@
+.clearboth {
+  clear: both;
+}
+
+.pagebreak {
+  @media print {
+    page-break-before: auto;
+  }
+}

@@ -574,7 +574,7 @@ aside {
     @include header-bottom;
     margin-bottom: 10px;
   }
-  @media screen and (not((max-width: 1149px) and (min-width: 750px))) {
+  @media screen and (not ( (max-width: 1149px) and (min-width: 750px) ) ) {
     display: none;
   }
 }

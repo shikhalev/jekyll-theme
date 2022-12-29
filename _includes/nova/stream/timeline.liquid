@@ -44,9 +44,9 @@
       <div class="no_toc_section">
 
       {{ item.excerpt | replace: '<h5', '<h6' | replace: '</h5', '</h6'
-                       | replace: '<h4', '<h6' | replace: '</h4', '</h6'
-                       | replace: '<h3', '<h5' | replace: '</h3', '</h5'
-                       | replace: '<h2', '<h4' | replace: '</h2', '</h2' }}
+                      | replace: '<h4', '<h6' | replace: '</h4', '</h6'
+                      | replace: '<h3', '<h5' | replace: '</h3', '</h5'
+                      | replace: '<h2', '<h4' | replace: '</h2', '</h4' }}
 
       </div>
       {%- if item.content contains site.excerpt_separator -%}

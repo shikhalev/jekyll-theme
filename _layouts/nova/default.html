@@ -119,6 +119,7 @@
 {%- if flag != "0" -%}
 <aside id="toc" class="toc toc-{{- page.layout | split: '/' | last -}}">
   <h4>Содержание</h4>
+  <pre>{{ flag | inspect }}</pre>
   {{ toc }}
 </aside>
 {%- else -%}

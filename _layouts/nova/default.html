@@ -82,7 +82,7 @@
 {%- endif -%}
 </header>
 
-{{- content | inject_anchors -}}
+{{- content | markdownify | inject_anchors -}}
 
 </article>
 

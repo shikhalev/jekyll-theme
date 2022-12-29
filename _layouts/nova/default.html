@@ -82,7 +82,7 @@
 {%- endif -%}
 </header>
 
-{{- content | inject_anchors -}}
+{{- content -}}
 
 </article>
 
@@ -110,7 +110,7 @@
     {%- comment -%}
     {%- include allejo/jekyll-toc.liquid html=content sanitize=true item_class="toc-entry" h_max=toc_depth skip_no_ids=true -%}
     {%- endcomment -%}
-    {{- content | toc_only -}}
+    {%- toc -%}
   {%- endcapture -%}
   {%- assign flag = toc | strip_html | strip -%}
 {%- else -%}

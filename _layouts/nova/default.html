@@ -112,11 +112,11 @@
     {%- endcomment -%}
     {%- toc -%}
   {%- endcapture -%}
-  {%- assign flag = toc | strip -%}
+  {%- assign flag = toc | number_of_words -%}
 {%- else -%}
-  {%- assign flag = "" -%}
+  {%- assign flag = "0" -%}
 {%- endif -%}
-{%- if flag != "" -%}
+{%- if flag != "0" -%}
 <aside id="toc" class="toc toc-{{- page.layout | split: '/' | last -}}">
   <h4>Содержание</h4>
   {{ toc }}

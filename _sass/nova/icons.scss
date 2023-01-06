@@ -295,6 +295,7 @@ $img-icons: (
   "phil-harvey": url(/assets/img/ico/phil-harvey.svg),
   "hugin-ru": url(/assets/img/ico/hugin-ru.svg),
   "giscus": url(/assets/img/ico/giscus.svg),
+  "webmaster": url(/assets/img/ico/webmaster.svg)
 );
 
 @each $name, $url in $img-icons {

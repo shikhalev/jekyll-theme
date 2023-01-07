@@ -285,7 +285,8 @@ $img-icons: (
   "yoomoney": url(/assets/img/ico/yoomoney.png),
   "gce": url(/assets/img/ico/gce.png),
   "analytics": url(/assets/img/ico/analytics.svg),
-  "metrica": url(/assets/img/ico/metrica.png),
+  "metrica": url(/assets/img/ico/metrika.svg),
+  "metrika": url(/assets/img/ico/metrika.svg),
   "liquid": url(/assets/img/ico/liquid.png),
   "wikipedia": url(/assets/img/ico/wikipedia.svg),
   "locus-map": url(/assets/img/ico/locus-map.png),
@@ -295,6 +296,7 @@ $img-icons: (
   "phil-harvey": url(/assets/img/ico/phil-harvey.svg),
   "hugin-ru": url(/assets/img/ico/hugin-ru.svg),
   "giscus": url(/assets/img/ico/giscus.svg),
+  "webmaster": url(/assets/img/ico/webmaster.svg)
 );
 
 @each $name, $url in $img-icons {

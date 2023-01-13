@@ -4,6 +4,7 @@ figure {
   margin: 5px 0px;
   border: solid $base-gray-color 1px;
   box-shadow: $base-shadow $base-gray-color;
+  shape-margin: 5px;
 
   &.logo {
     border: none;

@@ -67,19 +67,19 @@ iframe.hd {
   float: right;
   margin-left: 10px;
 }
-.center {
+.center, .__center {
   float: none;
   clear: both;
   margin: 10px auto;
 }
-.left {
+.left, .__left {
   @extend .strict-left;
   @media screen and (max-width: 500px) {
     float: none;
     margin: 5px auto 5px;
   }
 }
-.right {
+.right, .__right {
   @extend .strict-right;
   @media screen and (max-width: 500px) {
     float: none;

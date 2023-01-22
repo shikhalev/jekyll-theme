@@ -1,0 +1,59 @@
+@charset 'utf-8';
+@import 'nbw/colors',
+        'nbw/layout';
+
+article {
+
+  figure {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  figure.__figure {
+    border: 1px solid $light-gray-teal-border-color;
+    @include shadow-box;
+    shape-margin: 10px;
+
+    &.logo {
+      border: none;
+      box-shadow: none;
+    }
+
+    figcaption {
+      font-style: italic;
+      text-align: center;
+      hyphens: manual;
+    }
+  }
+
+  img {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    max-width: 100%;
+  }
+
+}
+
+.right, .__right {
+  float: right;
+  margin-left: 10px;
+}
+
+.left, .__left {
+  float: left;
+  margin-right: 10px;
+}
+
+.center, .__center {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figure.face {
+  overflow: hidden;
+  border-radius: 50%;
+  shape-outside: circle(50%);
+}

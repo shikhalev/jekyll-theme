@@ -1,0 +1,107 @@
+@charset 'utf-8';
+@import 'nbw/sizes',
+        'nbw/colors',
+        'nbw/layout';
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dt {
+  font-family: $caption-font-family;
+  font-weight: normal;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+$header_scale: 1.29;
+
+h5,
+h6,
+dt {
+  font-size: $base-font-size;
+}
+
+h4 {
+  font-size: $base-font-size * $header_scale;
+}
+
+h3 {
+  font-size: $base-font-size * $header_scale * $header_scale;
+}
+
+h2 {
+  font-size: $base-font-size * $header_scale * $header_scale * $header_scale;
+}
+
+h1 {
+  font-size: $base-font-size * $header_scale * $header_scale * $header_scale * $header_scale;
+}
+
+sup {
+  font-size: $index-font-size;
+}
+
+article {
+  @include pane;
+  @include white-pane;
+  @include shadow-box;
+
+  font-optical-sizing: auto;
+
+  p {
+    margin-top: 2px;
+    margin-bottom: 5px;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  ul {
+    margin: 0px;
+  }
+
+  hr {
+    color: $dark-teal-background;
+    border-top: dotted 1px $dark-teal-background;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    max-width: 90%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  dt {
+    margin: 0.7em 0em 0.3em;
+    color: $dark-teal-color;
+  }
+
+}
+
+#comments-section {
+  @include pane;
+  @include white-pane;
+  @include shadow-box;
+
+  margin-top: 10px;
+
+  font-optical-sizing: auto;
+
+  p {
+    margin-top: 2px;
+    margin-bottom: 5px;
+    text-align: justify;
+    hyphens: auto;
+  }
+}

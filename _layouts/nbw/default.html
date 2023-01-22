@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" title="CC BY-SA 4.0">
+  <meta name="license" content="CC BY-SA 4.0">
+  <link rel="icon" href="{{ '/favicon.svg' | absolute_url }}" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="/assets/theme.css" type="text/css">
+  {% if site.stylesheet %}
+    <link rel="stylesheet" href="/assets/{{- site.stylesheet -}}.css" type="text/css">
+  {% endif %}
+  {% if layout.stylesheet %}
+    <link rel="stylesheet" href="/assets/{{- layout.stylesheet -}}.css" type="text/css">
+  {% endif %}
+  {% if page.stylesheet %}
+    <link rel="stylesheet" href="/assets/{{- page.stylesheet -}}.css" type="text/css">
+  {% endif %}
+
+  {% seo %}
+
+  {%- if jekyll.environment == 'production' -%}
+    {% include google/analytics.html %}
+    {% include yandex/metrica.html %}
+  {%- endif -%}
+</head>
+
+<body>
+
+<div id="global-box">
+
+<div id="watermark-container">
+  <div id="watermark">shikhalev.org</div>
+</div>
+
+<div id="grid">
+
+<div id="pre-header"></div>
+
+<header id="header">
+  <p class="site-logo"><a href="/">{{- site.title -}}</a></p>
+</header>
+
+<nav id="site-navigation"></nav>
+
+<div id="post-header"></div>
+
+<div id="header-bar"></div>
+
+<aside id="search"></aside>
+
+<main id="main">
+  <article>
+    <h1>{{- page.title -}}</h1>
+    {{ content }}
+  </article>
+  <section id="comments-section">
+    <script src="https://giscus.app/client.js"
+      data-repo="shikhalev/shikhalev.github.io"
+      data-repo-id="MDEwOlJlcG9zaXRvcnkzMjI2NTAyNDI="
+      data-category="General"
+      data-category-id="MDE4OkRpc2N1c3Npb25DYXRlZ29yeTMyMTgzNDIw"
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="bottom"
+      data-theme="preferred_color_scheme"
+      data-lang="ru"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </section>
+</main>
+
+<aside id="page-sidebar"></aside>
+
+<aside id="site-sidebar"></aside>
+
+<div id="pre-footer"></div>
+
+<footer id="footer"></footer>
+
+<div id="post-footer"></div>
+
+</div>
+
+</div>
+
+
+</body>
+
+</html>

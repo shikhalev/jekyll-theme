@@ -63,6 +63,11 @@ article {
     hyphens: auto;
   }
 
+  p img {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
   ul {
     margin: 0px;
   }
@@ -85,6 +90,56 @@ article {
   dt {
     margin: 0.7em 0em 0.3em;
     color: $dark-teal-color;
+  }
+
+  a {
+    &:link {
+      color: $medium-teal-color;
+      text-decoration: none;
+    }
+    &:visited {
+      color: $dark-teal-color;
+      text-decoration: none;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  abbr {
+    cursor: help;
+  }
+
+  a.footnote::after {
+    content: ")";
+  }
+
+  .footnotes {
+    columns: 2;
+    column-gap: 10px;
+
+    border-top: dotted 5px $dark-teal-background;;
+
+    margin-top: 10px;
+    padding-top: 10px;
+
+    ol {
+      margin: 0px;
+      padding-left: 20px;
+    }
+
+    li {
+      break-inside: avoid;
+      page-break-inside: avoid;
+
+      &:target {
+        background-color: $whiter-color;
+      }
+    }
+
+    p {
+      text-align: left;
+    }
   }
 
 }

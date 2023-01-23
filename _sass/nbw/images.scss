@@ -35,12 +35,12 @@ article {
 
 }
 
-.right, .__right {
+.strict-right, .right, .__right {
   float: right;
   margin-left: 10px;
 }
 
-.left, .__left {
+.strict-left, .left, .__left {
   float: left;
   margin-right: 10px;
 }

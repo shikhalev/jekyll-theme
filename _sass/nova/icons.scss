@@ -296,7 +296,17 @@ $img-icons: (
   "phil-harvey": url(/assets/img/ico/phil-harvey.svg),
   "hugin-ru": url(/assets/img/ico/hugin-ru.svg),
   "giscus": url(/assets/img/ico/giscus.svg),
-  "webmaster": url(/assets/img/ico/webmaster.svg)
+  "webmaster": url(/assets/img/ico/webmaster.svg),
+  "gnome": url(/assets/img/ico/gnome.svg),
+  "xfce": url(/assets/img/ico/xfce.svg),
+  "kontact": url(/assets/img/ico/kontact.svg),
+  "kopete": url(/assets/img/ico/kopete.svg),
+  "konqueror": url(/assets/img/ico/konqueror.svg),
+  "dolphin": url(/assets/img/ico/dolphin.svg),
+  "kate": url(/assets/img/ico/kate.svg),
+  "cinnamon": url(/assets/img/ico/cinnamon.svg),
+  "mate": url(/assets/img/ico/mate.svg),
+  "lxqt": url(/assets/img/ico/lxqt.png),
 );
 
 @each $name, $url in $img-icons {
@@ -336,5 +346,17 @@ $img-icons: (
 .img-icon-javascript {
   &::before {
     vertical-align: -7%;
+  }
+}
+
+.img-icon-gnome {
+  &::before {
+    width: 0.7em;
+  }
+}
+
+.img-icon-kopete {
+  &::before {
+    vertical-align: -15%;
   }
 }

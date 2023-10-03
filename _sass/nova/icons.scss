@@ -319,6 +319,8 @@ $img-icons: (
   "mate": url(/assets/img/ico/mate.svg),
   "lxqt": url(/assets/img/ico/lxqt.png),
   "merlin-bird": url(/assets/img/ico/merlin-bird.png),
+  "kwave": url(/assets/img/ico/kwave.svg),
+  "soundkonverter": url(/assets/img/ico/soundkonverter.png),
 );
 
 @each $name, $url in $img-icons {
@@ -376,5 +378,11 @@ $img-icons: (
 .img-icon-merlin-bird {
   &::before {
     width: 1.5em;
+  }
+}
+
+.img-icon-kwave {
+  &::before {
+    width: 1.2em;
   }
 }

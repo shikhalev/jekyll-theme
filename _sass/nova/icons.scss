@@ -219,6 +219,10 @@ $icons: (
     "symbol": "\f14a",
     "font": "far",
   ),
+  "youtube": (
+    "symbol": "\f167",
+    "font": "fab",
+  ),
 );
 
 @each $name, $data in $icons {
@@ -238,6 +242,13 @@ $icons: (
       content: "#{map-get($data, "symbol")} ";
       @extend .#{map-get($data, "font")};
     }
+  }
+}
+
+.fa-icon-youtube {
+  &::before {
+    color: red;
+    vertical-align: -5%;
   }
 }
 
@@ -307,6 +318,7 @@ $img-icons: (
   "cinnamon": url(/assets/img/ico/cinnamon.svg),
   "mate": url(/assets/img/ico/mate.svg),
   "lxqt": url(/assets/img/ico/lxqt.png),
+  "merlin-bird": url(/assets/img/ico/merlin-bird.png),
 );
 
 @each $name, $url in $img-icons {
@@ -358,5 +370,11 @@ $img-icons: (
 .img-icon-kopete {
   &::before {
     vertical-align: -15%;
+  }
+}
+
+.img-icon-merlin-bird {
+  &::before {
+    width: 1.5em;
   }
 }

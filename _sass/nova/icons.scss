@@ -321,6 +321,8 @@ $img-icons: (
   "merlin-bird": url(/assets/img/ico/merlin-bird.png),
   "kwave": url(/assets/img/ico/kwave.svg),
   "soundkonverter": url(/assets/img/ico/soundkonverter.png),
+  "googleplay": url(/assets/img/ico/play.png),
+  "appstore": url(/assets/img/ico/appstore.png),
 );
 
 @each $name, $url in $img-icons {

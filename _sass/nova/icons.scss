@@ -323,6 +323,7 @@ $img-icons: (
   "soundkonverter": url(/assets/img/ico/soundkonverter.png),
   "googleplay": url(/assets/img/ico/play.png),
   "appstore": url(/assets/img/ico/appstore.png),
+  "cc": url(/assets/img/ico/cc.svg),
 );
 
 @each $name, $url in $img-icons {

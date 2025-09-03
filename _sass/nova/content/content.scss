@@ -208,3 +208,21 @@ abbr {
 .caption {
   font-family: $caption-font-family;
 }
+
+.label {
+  background-color: lighten($highlight-color, 25);
+  padding: 3px;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 70%;
+}
+
+.label.green {
+  background-color: #78ad02;
+  color: white;
+}
+
+.label.blue {
+  background-color: #3075b4;
+  color: white;
+}

@@ -325,6 +325,7 @@ $img-icons: (
   "appstore": url(/assets/img/ico/appstore.png),
   "cc": url(/assets/img/ico/cc.svg),
   "wikimedia": url(/assets/img/ico/wikimedia.png),
+  "tg": url(/assets/img/ico/tg.svg),
 );
 
 @each $name, $url in $img-icons {

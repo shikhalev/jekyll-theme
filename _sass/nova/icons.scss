@@ -326,6 +326,9 @@ $img-icons: (
   "cc": url(/assets/img/ico/cc.svg),
   "wikimedia": url(/assets/img/ico/wikimedia.png),
   "tg": url(/assets/img/ico/tg.svg),
+  "vsemayki": url(/assets/img/ico/vsemayki.png),
+  "printdirect": url(/assets/img/ico/printdirect.png),
+  "fun": url(/assets/img/ico/fun.png),
 );
 
 @each $name, $url in $img-icons {

@@ -223,6 +223,10 @@ $icons: (
     "symbol": "\f167",
     "font": "fab",
   ),
+  "credit-card": (
+    "symbol": "\f09d",
+    "font": "far",
+  ),
 );
 
 @each $name, $data in $icons {
